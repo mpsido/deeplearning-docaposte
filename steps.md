@@ -26,3 +26,14 @@ Finally start the jupyter notebook
 jupyter notebook
 ```
 
+## Summary of the setup
+
+```sh
+python3 -m venv deeplearning
+source deeplearning/bin/activate
+pip install ipykernel jupyter
+pip install numpy pandas matplotlib seaborn scikit-learn
+pip freeze > requirements.txt
+python -m ipykernel install --user --name=deeplearning --display-name "Deep learning"
+jupyter notebook
+```
